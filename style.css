@@ -64,6 +64,7 @@ p{
      gap: 50px;
  }
 .navbar__list a {
+    padding: 15px;
     transition: all 0.3s
 }
  .navbar__list a:hover {
