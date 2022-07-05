@@ -29,13 +29,44 @@
          </nav>
     </header>
 
-    <main>
-        <section>
-            <p>Contact</p>
-            <p>Las presentaciones de demos siempre son bienvenidas. Nos esforzamos por escuchar cada demostración que se nos envía, sin embargo, no podemos responder ni proporcionar comentarios para cada uno enviado. (320kbps preferido).
-                    Para enviarnos su demo hagalo a traves del Mail depthnoise.records@gmail.com</p>
-             <p>Submissions for demos are always welcome. We endeavour to listen to every demo that is sent to us however we cannot respond or provide feedback for each one submitted. (320kbps preferred).
-                    To send us your demo do it through the Mail depthnoise.records@gmail.com</p>
+    <main class="container ">
+        <section class="main__contact">
+            <h2>Contact</h2>
+            <p>Las presentaciones de demos siempre son bienvenidas. Nos esforzamos por escuchar cada demostración que se nos envía, enviaremos un comentario  para cada una que se nos envie. (320kbps preferido). Para enviarnos su demo hagalo a traves del formulario</p>
+         </section>
+         <section class="contact__formulario">
+            <form action="https://backend.com" method="POST" enctype="multipart/form-data" >
+                <div>
+                <article class="formulario__grid">
+                        <label for="nombre">ingrese su Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
+                    </article>
+                    <article>
+                        <label for="correo">Ingrese Email:</label>
+                        <input type="password"id="correo"name="correo" placeholder="Email..."/>
+                    </article>
+                    <article>
+                        <label for="consulta">Ingrese una breve descripcion</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder="Describa brevemente su track o Presskit"></textarea>
+                    </article>
+                    <article>
+                        <label for="pais">Ingrese su nacionalidad</label>
+                        <input type="text" id="pais" name="pais" placeholder="Ingrese su nacionalidad">
+                    </article>
+                </div>
+
+                <fieldset>
+                    <legend>Marque que desea enviar</legend>
+                    <label for="admin">Track</label>
+                    <input type="Radio"id="admin"name="grupo">
+                    <Label for="user">Presskit</Label>
+                    <input type="radio" id="user"name="grupo">
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+                
+            </form>
          </section>
     </main>
 

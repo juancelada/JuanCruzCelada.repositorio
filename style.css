@@ -63,7 +63,14 @@ p{
      justify-content: center;
      gap: 50px;
  }
+.navbar__list a {
+    transition: all 0.3s
+}
+ .navbar__list a:hover {
+    background-color: #1e293b;
+    border-radius: 10px;
 
+ }
  .navbar__logo--size{
     max-width: 70px; 
     max-height: 70px;
@@ -252,6 +259,35 @@ line-height: 50px;
     font-size: 120%;
     line-height: 200%;
 }
+.contact__formulario{
+    color: rgb(0, 0, 0);
+    background-color: rgb(119, 119, 119);
+}
+.formulario__grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/*About*/
+.about__container h2{
+    margin: 20px;
+}
+
+.about__container p {
+    line-height: 2.5rem;
+}
+.about__img{
+    max-width: 1200px;
+    max-height: 1200px;
+    align-items: center;
+}
+/*Contact*/
+.main__contact h2 {
+margin: 20px;
+}
+.main__contact p {
+    line-height: 2.5rem;
+}
+
 
 /*MEDIA QUERY*/
 
